@@ -1,0 +1,35 @@
+---
+layout: blog
+title: Categories
+permalink: /blog/categories/
+---
+<section id="services-container">
+    <ul class="grid-container">
+        {% for category in site.data.categories %}
+        {% unless category.title == page.title %}
+        <a href="{{ category.url | prepend: page.permalink | prepend: site.baseurl }}">
+            <li class="one-third col">
+                <div class="tn-container">
+
+                    {% include category/icon.html %}
+
+                    <div class="mask"></div>
+                    <div class="text-box">
+                        {% if category.title.size < 10 %}
+                        <h1>{{ category.title }}</h1>
+                        {% elsif category.title.size >= 10 and category.title.size < 20 %}
+                        <h2>{{ category.title }}</h2>
+                        {% elsif category.title.size >= 20 and category.title.size < 33 %}
+                        <h3>{{ category.title }}</h3>
+                        {% else %}
+                        <h5>{{ category.title }}</h5>
+                        {% endif %}
+                        {% if category.description %}<p class="icon-description">{{ category.description }}</p>{% endif %}
+                    </div>
+                </div>
+            </li>
+        </a>
+        {% endunless %}
+        {% endfor %}
+    </ul>
+</section>

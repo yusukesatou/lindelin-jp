@@ -1,0 +1,39 @@
+---
+layout: page
+title: Services
+description: Lindelin is an interactive creative organization aiming to create contents and services welcomed by many people.
+related: projects resources events
+permalink: /services/
+---
+<section id="services-container">
+  <ul class="grid-container">
+  {% for service in site.services %}
+    {% unless service.title == page.title %}
+    <a href="{{ service.url | prepend: site.baseurl }}">
+      <li class="one-third col">
+        <div class="tn-container">
+
+          {% include service/icon.html %}
+
+          <div class="mask"></div>
+          <div class="text-box">
+            {% if service.title.size < 10 %}
+            <h1>{{ service.title }}</h1>
+            {% elsif service.title.size >= 10 and service.title.size < 20 %}
+            <h2>{{ service.title }}</h2>
+            {% elsif service.title.size >= 20 and service.title.size < 33 %}
+            <h3>{{ service.title }}</h3>
+            {% else %}
+            <h5>{{ service.title }}</h5>
+            {% endif %}
+            {% if service.description %}<p class="icon-description">{{ service.description }}</p>{% endif %}
+          </div>
+        </div>
+      </li>
+    </a>
+    {% endunless %}
+  {% endfor %}
+  </ul>
+</section>
+
+{% include related-sections.html %}

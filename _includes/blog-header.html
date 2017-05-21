@@ -1,0 +1,16 @@
+<div class="text-box">
+    {% if description %}
+    <p>{{ description }}</p>
+    {% else %}
+    <p>{{ site.description }}</p>
+    {% endif %}
+    <nav class="menu">
+        <a href="{{ '/blog' | prepend: site.baseurl }}" class="nav-title">
+            <h1>{{ page.title }}</h1>
+        </a>
+        {% for link in site.data.blog-nav-links %}
+        <a class="nav-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+        {% endfor %}
+        <div class="nav-border"></div>
+    </nav>
+</div>

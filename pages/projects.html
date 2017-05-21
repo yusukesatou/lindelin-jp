@@ -1,0 +1,39 @@
+---
+layout: page
+title: Projects
+description: Lindelin is aiming for write beautiful code and develop the most popular projects in the world.
+permalink: /projects/
+related: services resources events
+---
+<section id="services-container">
+  <ul class="grid-container">
+  {% for project in site.projects %}
+    {% unless project.title == page.title %}
+    <a href="{{ project.url | prepend: site.baseurl }}">
+      <li class="one-third col">
+        <div class="tn-container">
+
+          {% include project/icon.html %}
+
+          <div class="mask"></div>
+          <div class="text-box">
+            {% if project.title.size < 10 %}
+            <h1>{{ project.title }}</h1>
+            {% elsif project.title.size >= 10 and project.title.size < 20 %}
+            <h2>{{ project.title }}</h2>
+            {% elsif project.title.size >= 20 and project.title.size < 33 %}
+            <h3>{{ project.title }}</h3>
+            {% else %}
+            <h5>{{ project.title }}</h5>
+            {% endif %}
+            {% if project.description %}<p class="icon-description">{{ project.description }}</p>{% endif %}
+          </div>
+        </div>
+      </li>
+    </a>
+    {% endunless %}
+  {% endfor %}
+  </ul>
+</section>
+
+{% include related-sections.html %}

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article>
+  <!-- Service metas -->
+  <header class="page-header">
+    <div class="mask"></div>
+    {% for category_data in site.data.categories %}
+    {% if category_data.title == page.title %}
+    {% assign category = category_data %}
+    {% endif %}
+    {% endfor %}
+
+    {% include category/feature.html %}
+
+    {% assign description = category.description %}
+    {% include blog-header.html %}
+
+  </header><!-- End service metas -->
+  {% assign post_list = site.categories[page.title] %}
+  {% include post-list.html %}
+</article>

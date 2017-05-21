@@ -1,0 +1,5 @@
+{% if project.icon %}
+<img src="{{ project.icon | prepend: '/images/projects' | prepend: site.baseurl }}" width="100%" alt="{{ project.title | append: ' featured image' }}" />
+{% else %}
+<img src="{{ 'projects' | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" width="100%" alt="{{ project.title | append: ' featured image' }}" />
+{% endif %}

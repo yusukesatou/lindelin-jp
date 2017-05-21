@@ -1,0 +1,16 @@
+- title: Laravel 実装イメージ（手順）ダウンロード
+  description: "Laravel 実装イメージ/手順書"
+  published-date: 2017-05-15 # Optional, e.g. 1987-01-23
+  path: /resources/Laravel 実装イメージ（手順）.docx # E.g. /resources/my-file.pdf
+- title: Laravel本番環境への移行手順書ダウンロード
+  description: "Laravel本番環境への移行手順書"
+  published-date: 2016-05-15 # Optional, e.g. 1987-01-23
+  path: /resources/Laravel本番環境への移行.docx # E.g. /resources/my-file.pdf
+#- title: A sample document
+#  description: "A et omnis sit. Qui est officia quis eius odit beatae enim cumque. Dolores dolore ut quasi eaque esse. Aperiam iste et architecto nostrum blanditiis."
+#  published-date: 2016-03-23 # Optional, e.g. 1987-01-23
+#  path: /resources/sample.pdf # E.g. /resources/my-file.pdf
+#- title: Another sample document
+#  description: "Et in aut totam ut expedita aperiam quo. Eius sed nihil dignissimos tempora ut quibusdam impedit eaque. Ut totam asperiores cum illum quo. Autem voluptatem ex rem velit consequuntur soluta."
+#  published-date: 2016-03-16 # Optional, e.g. 1987-01-23
+#  path: /resources/another-sample.pdf # E.g. /resources/my-file.pdf

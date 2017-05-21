@@ -1,0 +1,26 @@
+---
+layout: page
+title: Resources
+description: You can download the resources if you need.
+permalink: /resources/
+related: projects services events
+---
+<ul class="post-list resource-index">
+{% for resource in site.data.resources %}
+  <li>
+    <h4>
+      <a class="post-link" href="{{ resource.path | prepend: site.baseurl }}">{{ resource.title }}</a>
+    </h4>
+
+    <span>{{ resource.published-date | date: "%b %-d, %Y" | prepend: 'Published: ' }}</span>
+
+    <a class="post-link" href="{{ resource.path | prepend: site.baseurl }}">
+      <p>{{ resource.description | truncatewords: 30 }}</p>
+    </a>
+
+    <a href="{{ resource.path | prepend: site.baseurl }}" class="index-button">read the document</a>
+  </li>
+{% endfor %}
+</ul>
+
+{% include related-sections.html %}

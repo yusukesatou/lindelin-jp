@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<article>
+  <header class="page-header">
+    <div class="mask"></div>
+
+    {% include project/feature.html %}
+
+    <div class="text-box">
+      <span class="nav-title {% if page.title.size > 9 %}long-title{% endif %}">
+        <h1 class="page-title">{{ page.title }}</h1>
+      </span>
+      <br>
+      <p><strong>{{ page.description }}</strong></p>
+    </div>
+  </header>
+
+  {% include social-shares.html %}
+
+  <div class="post-content collection-content">
+    {{ content }}
+  </div>
+</article>
+
+<!-- Related services -->
+{% if page.related %}
+<section id="related-sections">
+  <h2>Related Projects</h2>
+  <ul class="grid-container">
+  {% assign related = page.related %}
+    {% for project in site.projects %}
+      {% if related contains project.title %}
+      <a href="{{ project.url | prepend: site.baseurl }}">
+        <li class="one-third col">
+          <div class="tn-container">
+            {% include project/icon.html %}
+            <div class="mask"></div>
+            <div class="text-box">
+              <h2 class="related-title">{{ project.title }}</h2>
+              {% if project.description %}
+              <p class="icon-description">{{ project.description }}</p>
+              {% endif %}
+            </div>
+          </div>
+        </li>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

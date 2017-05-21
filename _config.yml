@@ -1,0 +1,183 @@
+# Welcome to Lindelin Jekyll Template!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+
+# Site settings
+title: Lindelin
+description: Creative.Colors
+
+# baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "http://www.lindelin.org" # the base hostname & protocol for your site
+
+# Profiles (SEO)
+facebook_username: lindelin.org
+github_username: lindelin
+#googleplus_username: randomexample
+#instagram_username: randomexample
+#linkedin_username: randomexample
+#periscope_username: randomexample
+#reddit_username: u/randomexample
+twitter_username: Lindelin_info
+#youtube_username: user/randomexample
+email: contact@lindelin.org
+
+# API keys
+api_keys:
+  google-map: "AIzaSyAZ0zkyhmLwU5U5emIMW0nJBbwksl61dFc"
+  google-search: "017180029238860676347:xeq1amsvqtq"
+  disqus_shortname: "lindelin"
+
+# Build settings
+markdown: kramdown
+
+# Gems
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-avatar
+  - jekyll-redirect-from
+  # - jekyll-github-metadata
+
+whitelist:
+  - jekyll-redirect-from
+
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Blog / news url
+permalink: /blog/:year/:title/
+
+# Mentions
+jekyll-mentions: https://twitter.com
+
+# Collections
+collections:
+  services:
+    title: Services
+    featured-image:
+    permalink: /services/:path
+    output: true
+  projects:
+    title: Projects
+    featured-image:
+    permalink: /projects/:path
+    output: true
+  events:
+    title: Events
+    featured-image:
+    permalink: /events/:path
+    output: true
+
+# Prose
+prose:
+  siteurl: 'http://www.lindelin.org'
+  media: 'images'
+  ignore:
+    - /.sass-cache
+    - /_layouts
+    - /_includes
+    - /_sass
+    - /css
+    - /_site
+    - Gemfile
+    - Gemfile.lock
+    - feed.xml
+    - README.md
+    - .gitignore
+    - CNAME
+    - _config.yml
+    - index.html
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          placeholder: "Add your post title here"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          value: false
+    _services:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "service"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          placeholder: "Add your service title here"
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "Description"
+          placeholder: "Add a short description of your service here"
+      - name: "related"
+        field:
+          element: "textarea"
+          label: "Related"
+          placeholder: "Add the titles of related services here"
+    _projects:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "project"
+      - name: "title"
+        field:
+          element: "textarea"
+          placeholder: "Add a title for the issue you address here"
+      - name: "description"
+        field:
+          element: "textarea"
+          placeholder: "Add a short description of how you address the issue here"
+      - name: "related"
+        field:
+          element: "textarea"
+          placeholder: "Add the titles of related issues here"
+    _events:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "event"
+      - name: "title"
+        field:
+          element: "textarea"
+          placeholder: "Add a title for your event here"
+      - name: "description"
+        field:
+          element: "textarea"
+          placeholder: "Add a short description of your event here"
+      - name: "start-date"
+        field:
+          element: "textarea"
+          placeholder: "Add the event date / time in the format YYYY-MM-DD HH:MM"
+      - name: "end-date"
+        field:
+          element: "textarea"
+          placeholder: "You can optionally define an end date / time  for your event in the format YYYY-MM-DD HH:MM"
+      - name: "name"
+        field:
+          element: "textarea"
+          placeholder: "Street address, for display purposes only"
+      - name: "latitude"
+        field:
+          element: "textarea"
+          placeholder: "The latitude (usually first) value of the location"
+      - name: "longitude"
+        field:
+          element: "textarea"
+          placeholder: "The longitude (usually second) value of the location"

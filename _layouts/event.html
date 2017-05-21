@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<article class="page">
+
+  <header class="page-header">
+    <div class="row">
+      <div id="map_wrapper">
+        <div id="map_canvas" style="width:100%; height:100%"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="event-texts" itemscope itemtype="http://schema.org/Event">
+    <h3 itemprop="name">{{ page.title }}</h3>
+
+    {% include social-shares.html %}
+
+    <div class="event-dates">
+      <span class="event-icon clock">
+        {% include icons/clock.html %}
+      </span>
+      <span class="event-meta">
+        {{ page.start-date | date: '%R, %b %-d, %Y' }}
+      </span>
+      {% if page.end-date %}
+      <span class="event-meta">
+        {{ page.end-date | date: '%R, %b %-d, %Y' | prepend: ' - ' }}
+      </span>
+      {% endif %}
+    </div>
+
+    <div class="event-location">
+      <span class="event-icon">
+        {% include icons/location.html %}
+      </span>
+      <span class="event-meta" itemprop="location">
+        {% for location in page.locations %}
+        {{ location.name }}
+        {% if location.address %}
+        <br>
+        <span class="event-meta" itemprop="address">
+          {{ location.address }}
+        </span>
+        {% endif %}
+        {% unless forloop.last == true %} / {% endunless %}
+        {% endfor %}
+      </span>
+
+    </div>
+
+    <p itemprop="description">{{ page.description }}</p>
+  </div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+  <br>
+  <div class="post-content">
+    {% if page.comments %}
+    {% include comment.html %}
+    {% endif %}
+  </div>
+
+</article>
+
+{% include event/mapjs.html %}

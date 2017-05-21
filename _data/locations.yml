@@ -1,0 +1,7 @@
+# This is your locations information file, where you can add, remove and update your office location information.
+# You can find the latitude and logitude values for your locations using services like Google, Bing or Apple Maps.
+
+- name: Tokyo
+  address: Tokyo
+  latitude: 35.709262
+  longitude: 139.732447

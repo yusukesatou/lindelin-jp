@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<article>
+  <!-- Service metas -->
+  <header class="page-header">
+    <div class="mask"></div>
+
+    {% include service/feature.html %}
+
+    <div class="text-box">
+      <div class="nav-title {% if page.title.size > 9 %}long-title{% endif %}">
+        <h1 class="page-title">{{ page.title }}</h1>
+      </div>
+      <br>
+      <p>
+        <strong>{{ page.description }}</strong>
+      </p>
+    </div>
+  </header><!-- End service metas -->
+
+  <!-- Social shares -->
+  {% include social-shares.html %}<!-- End social shares -->
+
+  <!-- Service content -->
+  <div class="post-content collection-content">
+    {{ content }}
+  </div><!-- End service content -->
+
+</article>
+
+<!-- Related services -->
+{% if page.related %}
+<section id="related-sections">
+  <h2>Related Services</h2>
+  <ul class="grid-container">
+  {% assign related = page.related %}
+    {% for service in site.services %}
+      {% if related contains service.title %}
+      <a href="{{ service.url | prepend: site.baseurl }}">
+        <li class="one-third col">
+          <div class="tn-container">
+
+            {% include service/icon.html %}
+
+            <div class="mask"></div>
+            <div class="text-box">
+              <h2 class="related-title">{{ service.title }}</h2>
+              {% if service.description %}
+              <p class="icon-description">{{ service.description }}</p>
+              {% endif %}
+            </div>
+          </div>
+        </li>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}<!-- End related services -->

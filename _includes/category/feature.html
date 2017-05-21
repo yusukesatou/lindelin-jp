@@ -1,0 +1,17 @@
+{% if category.feature and category.icon %}
+<img src="{{ category.feature | prepend: '/images/categories' | prepend: site.baseurl }}" width="100%" alt="{{ category.title | append: ' featured image' }}" class="page-hero" />
+<img src="{{ category.icon | prepend: '/images/categories' | prepend: site.baseurl }}" width="100%" alt="{{ category.title | append: ' featured image' }}" class="mobile-hero" />
+{% elsif category.icon %}
+<img src="{{ 'categories' | downcase | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}"
+     alt="{{ category.title | append: ' featured image' }}" width="100%" class="page-hero" />
+<img src="{{ category.icon | prepend: '/images/categories' | prepend: site.baseurl }}" width="100%" alt="{{ category.title | append: ' featured image' }}" class="mobile-hero" />
+{% elsif category.feature %}
+<img src="{{ category.feature | prepend: '/images/categories' | prepend: site.baseurl }}" width="100%" alt="{{ category.title | append: ' featured image' }}" class="page-hero" />
+<img src="{{ 'categories' | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}"
+     alt="{{ category.title | append: ' featured image' }}" width="100%" class="mobile-hero" />
+{% else %}
+<img src="{{ 'categories' | downcase | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}"
+     alt="{{ category.title | append: ' featured image' }}" width="100%" class="page-hero" />
+<img src="{{ 'categories' | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}"
+     alt="{{ category.title | append: ' featured image' }}" width="100%" class="mobile-hero" />
+{% endif %}

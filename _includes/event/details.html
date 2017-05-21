@@ -1,0 +1,32 @@
+<li class="event">
+    <a href="{{ event.url | prepend: site.baseurl }}">
+
+        {% include event/social-shares.html %}
+
+        <span class="event-meta">{{ event.start-date | date: '%R, %b %-d, %Y' }}</span>
+        <a href="{{ event.url | prepend: site.baseurl }}">
+            <h4>{{ event.title }}</h4>
+        </a>
+
+        {% if event.locations %}
+        {% for location in event.locations %}
+        <p>
+          <span class="event-icon">
+          {% include icons/location.html %}
+          </span>
+            <span>
+            {{ location.name }}
+          </span>
+        </p>
+        {% endfor %}
+        {% endif %}
+
+        {% if event.description %}
+        <p>
+            {{ event.description }}
+        </p>
+        {% endif %}
+
+        <a href="{{ event.url | prepend: site.baseurl }}" class="index-button">see event details</a>
+    </a>
+</li>

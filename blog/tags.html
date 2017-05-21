@@ -1,0 +1,63 @@
+---
+layout: blog
+title: Tags
+---
+<h1 class="page-heading">{{ page.title }}</h1>
+
+<section class="list">
+    <div class="post-content collection-content">
+        {% assign tags_list = site.tags %}
+
+        {% if tags_list.first[0] == null %}
+        {% for tag in tags_list %}
+        <a href="#{{ tag | slugify }}" class="tag-link">{{ tag }}</a>
+        {% endfor %}
+        {% else %}
+        {% for tag in tags_list %}
+        <a href="#{{ tag[0] | slugify }}" class="tag-link">{{ tag[0] }}</a>
+        {% endfor %}
+        {% endif %}
+
+        {% assign tags_list = nil %}
+    </div>
+</section>
+
+<section class="tag-list">
+    {% for tag in site.tags  %}
+    <h2 class="page-heading" id="{{ tag[0] | slugify }}">#{{ tag[0] }}</h2>
+
+    <ul class="post-list">
+        {% assign pages_list = tag[1] %}
+        {% for post in pages_list %}
+            {% if post.title != null %}
+                {% if group == null or group == post.group %}
+                <li>
+                    <a href="https://getpocket.com/save?url={{ post.url | prepend: site.baseurl | prepend: site.url }}&title={{ post.title }}" title="Save to Pocket" target="_blank">
+                        <span class="pocket-icon">
+                            {% include icons/pocket.html %}
+                        </span>
+                    </a>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <span class="post-meta">&nbsp;|&nbsp;</span>
+                    <span class="post-meta">{{ post.content | number_of_words | divided_by: 160 | floor | append: ' minute read' }}</span>
+
+                    <h3>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h3>
+
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        <p>{{ post.excerpt | truncatewords: 30 }}</p>
+                    </a>
+
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="index-button">read on...</a>
+                </li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        {% assign pages_list = nil %}
+        {% assign group = nil %}
+    </ul>
+
+    <div class="breaker"></div>
+    {% endfor %}
+</section>

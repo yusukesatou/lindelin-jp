@@ -1,0 +1,8 @@
+- title: News
+  url: news
+  description: "Lindelin News is the official blog of Lindelin. Every day bringing you the latest news and events."
+- title: Articles
+  icon: /articles-icon.jpg
+  feature: /articles.jpg
+  url: articles
+  description: "Bringing you tutorials and packages."

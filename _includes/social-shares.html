@@ -1,0 +1,20 @@
+<!-- Social shares -->
+<ul class="social-share-list">
+  <li class="share-facebook">
+    <a class="share-item" id="social-facebook" href="https://www.facebook.com/sharer/sharer.php?t={{ page.title }}&u={{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share on Facebook">
+      {% include icons/facebook.html %}
+    </a>
+  </li>
+
+  <li class="share-twitter">
+    <a class="share-item" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share on Twitter">
+      {% include icons/twitter.html %}
+    </a>
+  </li>
+
+  <li class="share-linkedin">
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}{% if post.excerpt %}&summary={{ post.excerpt }}{% endif %}&source={{ site.url | prepend: site.baseurl }}" title="Share on LinkedIn">
+      {% include icons/linkedin.html %}
+    </a>
+  </li>
+</ul><!-- End social shares -->
