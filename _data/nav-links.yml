@@ -1,17 +1,17 @@
-- title: About
+- title: 概要
   url: /about/
-- title: News
+- title: 最新情報
   url: /blog/categories/news/
-- title: Projects
+- title: プロジェクト
   url: /projects/
-- title: Services
+- title: サービス
   url: /services/
-- title: Blog
+- title: ブログ
   url: /blog/
-- title: Events
+- title: イベント
   url: /events/
-- title: Join Us
+- title: 採用情報
   url: /careers/
-- title: Resources
+- title: ダウンロード
   url: /resources/
 
