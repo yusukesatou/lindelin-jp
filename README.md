@@ -1,3 +1,3 @@
-# Lindelin [![Build Status](https://travis-ci.org/lindelin/lindelin.github.io.svg?branch=master)](https://travis-ci.org/lindelin/lindelin.github.io)
+# Lindelin Japan
 
-Lindelin's Official Website
+Lindelin Japan's Official Website
