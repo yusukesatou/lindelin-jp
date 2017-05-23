@@ -2,26 +2,28 @@
 layout: project
 title: Lindelin
 icon: /lindelin/icon.jpg
-description: "Lindelin's Official Website"
+description: "Lindelin公式サイト"
 related: 
 - Lindalë
+- Laravel ELBサポート
 search: false
 ---
 
-### Lindelin Project
-##### ...is a Lindelin's Official Website
+### Lindelinプロジェクト
+このプロジェクトは[Lindelin公式サイト](http://www.lindelin.org)です。
 
-### About
+### 概要
 
-This project enables organizations and non-profits to easily create their own website at zero cost.
+このプロジェクトにより、組織や非営利団体はゼロコストで簡単に独自のWebサイトを作成できます。
 
-By simply copying this site and replacing a few lines in a few files you'll make it your own. Have a look around and see if it meets your needs - if you have any feedback or requests, feel free to [get in touch](mailto:contact@lindelin.org=Lindelin Feedback).
-
-Otherwise, grab a coffee and learn how to set up your website.
+単にこのサイトをコピーし、いくつかのファイルの中のいくつかの行を置き換えるだけで、
+あなたはそれをあなた自身のものにするでしょう。 
+あなたのニーズに合っているかどうかを見てみてください。
+また、フィードバックやご要望があれば、気軽に連絡してくだいさい。→[フィードバック](mailto:contact@lindelin.org=Lindelin Feedback).
 
 ### Github
 [https://github.com/lindelin/lindelin.github.io](https://github.com/lindelin/lindelin.github.io)
 
 
-### License
-The Lindelin is open-sourced software licensed under the [MIT license](https://github.com/lindelin/lindale/blob/master/LICENSE)
+### ライセンス
+Lindelinは、[MIT license](https://github.com/lindelin/lindale/blob/master/LICENSE)の下で公開されているオーペンソースソフトウェアです。

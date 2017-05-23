@@ -1,6 +1,6 @@
 ---
 layout: service
-title: IT consulting
+title: ITコンサルティング
 related: 
 - Open source software development
 - Development Seminar

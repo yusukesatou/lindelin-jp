@@ -1,6 +1,6 @@
 ---
 layout: service
-title: Open source software development
+title: オープンソース活動
 icon: /open-source-software-service/icon.jpg
 feature: /open-source-software-service/feature.jpg
 related: 

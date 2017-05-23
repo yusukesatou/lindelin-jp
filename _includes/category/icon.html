@@ -1,5 +1,5 @@
 {% if category.icon %}
 <img src="{{ category.icon | prepend: '/images/categories' | prepend: site.baseurl }}" width="100%" alt="{{ category.title | append: ' featured image' }}" />
 {% else %}
-<img src="{{ 'categories' | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" width="100%" alt="{{ category.title | append: ' featured image' }}" />
+<img src="{{ 'カテゴリー' | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" width="100%" alt="{{ category.title | append: ' featured image' }}" />
 {% endif %}
