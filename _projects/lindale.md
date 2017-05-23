@@ -9,11 +9,11 @@ related:
 ---
 <p align="center"><img src="/images/projects/lindale/lindale.png" width="50%" alt="{{ page.title | append: ' featured image' }}" /></p>
 
-### About Lindalë
+### Lindalëについて
 ##### Lindalëはクエンヤ語というJ.R.R.トルキンのエルフ言語で、「音楽」という意味です。
 #### Lindalëは、プロジェクト管理のためのオープンソースソフトウェアです。
 
-### Requirements
+### サーバー要件
 LindalëはLaravel 5.3の上に構築されているため、いくつかのシステム要件があります:
 
 - PHP >= 5.6
