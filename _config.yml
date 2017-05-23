@@ -28,7 +28,7 @@ email: contact@lindelin.org
 # API keys
 api_keys:
   google-map: "AIzaSyCJFrTWY0uGiNtJA0rAlcqeZ1xUQVjc-D8"
-  google-search: "017180029238860676347:ik9h2htzmyc"
+  google-search: "017180029238860676347:xeq1amsvqtq"
   disqus_shortname: "jp-lindelin"
 
 # Build settings
@@ -78,7 +78,7 @@ collections:
 
 # Prose
 prose:
-  siteurl: 'http://www.lindelin.org'
+  siteurl: 'http://jp.lindelin.org'
   media: 'images'
   ignore:
     - /.sass-cache
