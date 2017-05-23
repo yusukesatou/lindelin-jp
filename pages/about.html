@@ -1,13 +1,11 @@
 ---
 layout: page
-title: Lindelinについて
+title: Lindelin
 description: >-
   Lindelinはクエンヤ語というJ.R.R.トルキンのエルフ言語で、「メロディー」という意味です。
 introduction: >-
-  Lindelin is an organization of creative and seasoned developers engaged in
-  open source projects. With varied experience, Laravel (PHP Framework)
-  development is our core strength. Our clear vision for design and development
-  enables us to draft a clear picture of an idea turning into reality.
+  Lindelin（リンデリン）はクリエティブで豊かな経験を持つ開発者によって結成された非営利団体です。
+  主にオープンソース活動をしています。
 permalink: /about/
 published: true
 search: false
@@ -21,7 +19,7 @@ search: false
 <!-- Team members -->
 {% if site.data.team-members.size > 0 %}
 <section class="team-members">
-  <h2 align="center">Our Team</h2>
+  <h2 class="page-heading">私たち</h2>
   <div class="grid-container">
     {% for member in site.data.team-members %}
     {% comment %}Check whether total no. of staff members is odd / even and structure final member accordingly{% endcomment %}
@@ -52,16 +50,16 @@ search: false
 <!-- Careers link -->
 {% if site.data.career-vacancies.size > 0 %}
 <a href="{{ '/careers' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'Careers at '}}" class="careers-link">
-  <h2 align="center">we're hiring!</h2>
-  <span>Educational background and age are unnecessary for all occupations.</span>
-  <p>{{ site.title | prepend: 'See all current vacancies at ' }}</p>
+  <h2 align="center">メンバー募集中です！</h2>
+  <span>全職種とも学歴・年齢は不問です。</span>
+  <p>{{ site.title }}の募集要項を見る</p>
 </a><!-- End careers link -->
 {% endif %}
 
 {% if site.data.locations.size > 0 %}
 <!-- Office locations map -->
 <section class="office-locations">
-  <h2 align="center">Our Locations</h2>
+  <h2 align="center" class="page-heading">私たちの場所</h2>
   <div class="map-container">
     <div>
       <div class="row">
@@ -77,15 +75,15 @@ search: false
 {% if site.email %}
 <!-- Contact form -->
 <section id="contact">
-    <h2 align="center">{{ site.title | prepend: 'Contact ' }}</h2>
+    <h2 class="page-heading">お問い合わせ</h2>
     <form action="https://formspree.io/{{ site.email }}" method="POST" class="formspree" name="contact">
-      <input type="text" placeholder="your name" class="name" name="name" rows="1" required />
+      <input type="text" placeholder="お名前" class="name" name="name" rows="1" required />
 
-      <input type="email" name="email" placeholder="your email" maxlength="36" pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+" class="email" required />
+      <input type="email" name="email" placeholder="メールアドレス" maxlength="36" pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+" class="email" required />
 
-      <textarea name="message" placeholder="your message" rows="3" class="message"></textarea>
+      <textarea name="message" placeholder="メッセージ" rows="3" class="message"></textarea>
       <input type="hidden" name="_subject" value="A new contact form Lindelin's Official Website" />
-      <button type="submit" class="send">ok, send it</button>
+      <button type="submit" class="send">送信します</button>
 
       <input type="text" name="_gotcha" style="display:none" />
       <input type="hidden" name="_next" value="/" />

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Join Us
-description: Go and join us! We are constantly recruiting someone who want to join the challenge together, to new fields that no one has step into yet.
+description: Lindelinは、絶えず一緒にチャレンジに参加したいと思う人、まだ誰も踏み込んでいない新しい分野に共に挑んでくれる人を常に募集しています。
 permalink: /careers/
 ---
 {% for vacancy in site.data.career-vacancies %}
@@ -14,7 +14,7 @@ permalink: /careers/
     <span class="salary" itemprop="baseSalary">{{ vacancy.salary }}</span>
     <p class="vacancy-description" itemprop="description">{{ vacancy.description }}</p>
     {% if vacancy.essential-criteria.size > 0 %}
-    <h3>Essential Criteria</h3>
+    <h3>必須基準</h3>
     <ol itemprop="qualifications skills">
       {% for criterion in vacancy.essential-criteria %}
       <li>
@@ -26,7 +26,7 @@ permalink: /careers/
 
     {% if vacancy.essential-criteria.size > 0 %}
     <br>
-    <h3>Desirable Criteria</h3>
+    <h3>求める人材像</h3>
     <ol itemprop="qualifications skills">
       {% for criterion in vacancy.desirable-criteria %}
       <li>
@@ -37,11 +37,11 @@ permalink: /careers/
     {% endif %}
     {% if vacancy.closing-date %}
     <br>
-    <h3>Closing Date</h3>
+    <h3>締め切り</h3>
     <span class="closing-date">{{ vacancy.closing-date | date: "%b %-d, %Y" }}</span>
     {% endif %}
 
-    <a href="mailto:{{ site.email | append: '' }}" class="button">Apply by Email</a>
+    <a href="mailto:{{ site.email | append: '' }}" class="button">エントリー</a>
   </li><!-- End career vacancy listing -->
 </ul><!-- End career vacancies index -->
 {% endfor %}

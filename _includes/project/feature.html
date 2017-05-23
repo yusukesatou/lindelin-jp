@@ -2,16 +2,16 @@
 <img src="{{ page.feature | prepend: '/images/projects' | prepend: site.baseurl }}" width="100%" alt="{{ page.title | append: ' featured image' }}" class="page-hero" />
 <img src="{{ page.icon | prepend: '/images/projects' | prepend: site.baseurl }}" width="100%" alt="{{ page.title | append: ' featured image' }}" class="mobile-hero" />
 {% elsif page.icon %}
-<img src="{{ 'projects' | downcase | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}"
+<img src="{{ 'プロジェクト' | downcase | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}"
      alt="{{ page.title | append: ' featured image' }}" width="100%" class="page-hero" />
 <img src="{{ page.icon | prepend: '/images/projects' | prepend: site.baseurl }}" width="100%" alt="{{ page.title | append: ' featured image' }}" class="mobile-hero" />
 {% elsif page.feature %}
 <img src="{{ page.feature | prepend: '/images/projects' | prepend: site.baseurl }}" width="100%" alt="{{ page.title | append: ' featured image' }}" class="page-hero" />
-<img src="{{ 'projects' | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}"
+<img src="{{ 'プロジェクト' | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}"
      alt="{{ page.title | append: ' featured image' }}" width="100%" class="mobile-hero" />
 {% else %}
-<img src="{{ 'projects' | downcase | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}"
+<img src="{{ 'プロジェクト' | downcase | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}"
      alt="{{ page.title | append: ' featured image' }}" width="100%" class="page-hero" />
-<img src="{{ 'projects' | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}"
+<img src="{{ 'プロジェクト' | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}"
      alt="{{ page.title | append: ' featured image' }}" width="100%" class="mobile-hero" />
 {% endif %}

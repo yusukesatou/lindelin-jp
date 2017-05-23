@@ -1,21 +1,21 @@
 # This is your staff information file, where you can add, remove and update staff information.
 # You can add images for each staff member to the 'team' folder in 'images'.
 
-- name:  Jie Wu(Lindelëa)
+- name: 呉　傑
   role: CEO
   # img: http://placehold.it/120x120
   # github_username: lindelea
-  description: "Lindelëa is a Lindelin's founder and CEO. He came from China and now lives in Japan."
+  description: "Lindelinの創業者で、CEOとして勤めます。 彼は中国から来て、現在日本に住んでいます。"
   email: j.wu@lindelin.org
 
-- name: Rikiya Iizuka(Ricky)
+- name: 飯塚　力也(Ricky)
   role: COO
   # img: http://placehold.it/120x120
-  description: "Ricky joined Lindelin as COO. He comes from Japan."
+  description: "LindelinのCOOとして迎え入れました。 彼は日本の方です。"
   email: riizuka@lindelin.org
 
-- name: Ning Li
+- name: 李　寧
   role: CMO
   # img: http://placehold.it/120x120
-  description: "Li is a Lindelin's Chief Marketing Officer. She comes from China."
+  description: "中国から来た李さんはLindelinのチーフマーケティングオフィサーとして活躍しています。"
   email: riizuka@lindelin.org

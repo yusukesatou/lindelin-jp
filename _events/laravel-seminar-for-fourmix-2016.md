@@ -1,7 +1,7 @@
 ---
 layout: event
-start-date: 2016-08-17
-end-date: 2016-09-15 # optional
+start-date: 2016-08-17 12:00
+end-date: 2016-09-15 12:00 # optional
 locations:
   - name: フォーミックス本社
     address: 〒105-0014 東京都港区芝２丁目９−５ ワースリビングＦＫＯ 4F

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Resources
-description: You can download the resources if you need.
+title: ダウンロード
+description: 必要に応じてリソースをダウンロードできます。
 permalink: /resources/
-related: projects services events
+related: プロジェクト サービス イベント
 ---
 <ul class="post-list resource-index">
 {% for resource in site.data.resources %}
@@ -12,13 +12,13 @@ related: projects services events
       <a class="post-link" href="{{ resource.path | prepend: site.baseurl }}">{{ resource.title }}</a>
     </h4>
 
-    <span>{{ resource.published-date | date: "%b %-d, %Y" | prepend: 'Published: ' }}</span>
+    <span>{{ resource.published-date | date: "%Y年%m月%d日" | prepend: '掲載日: ' }}</span>
 
     <a class="post-link" href="{{ resource.path | prepend: site.baseurl }}">
       <p>{{ resource.description | truncatewords: 30 }}</p>
     </a>
 
-    <a href="{{ resource.path | prepend: site.baseurl }}" class="index-button">read the document</a>
+    <a href="{{ resource.path | prepend: site.baseurl }}" class="index-button">ダウンロードする</a>
   </li>
 {% endfor %}
 </ul>
