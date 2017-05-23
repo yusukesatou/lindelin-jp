@@ -1,8 +1,8 @@
-- title: Posts
+- title: 記事
   url: /blog/
-- title: Categories
+- title: カテゴリー
   url: /blog/categories
-- title: Tags
+- title: タグ
   url: /blog/tags/
-- title: Archive
+- title: アーカイブ
   url: /blog/archive/
