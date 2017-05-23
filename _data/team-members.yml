@@ -1,21 +1,30 @@
 # This is your staff information file, where you can add, remove and update staff information.
 # You can add images for each staff member to the 'team' folder in 'images'.
 
-- name: 呉　傑
+- name: 呉傑
   role: CEO
   # img: http://placehold.it/120x120
-  # github_username: lindelea
+  github_username: github
   description: "Lindelinの創業者で、CEOとして勤めます。 彼は中国から来て、現在日本に住んでいます。"
   email: j.wu@lindelin.org
 
-- name: 飯塚　力也(Ricky)
+- name: 飯塚力也
   role: COO
   # img: http://placehold.it/120x120
+  github_username: github
   description: "LindelinのCOOとして迎え入れました。 彼は日本の方です。"
   email: riizuka@lindelin.org
 
-- name: 李　寧
+- name: 齋藤和成
+  role: CFO
+  # img: http://placehold.it/120x120
+  github_username: github
+  description: "LindelinのCFOとして選任された。 彼は日本の方です。"
+  email: ksaito@lindelin.org
+
+- name: 李寧
   role: CMO
   # img: http://placehold.it/120x120
+  github_username: github
   description: "中国から来た李さんはLindelinのチーフマーケティングオフィサーとして活躍しています。"
   email: riizuka@lindelin.org

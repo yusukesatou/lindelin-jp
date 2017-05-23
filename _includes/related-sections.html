@@ -5,7 +5,14 @@
     {% assign related = page.related | split: ' ' %}
     {% for i in related %}
     {% assign oddTest = forloop.length | modulo: 2 %}
-    <a href="{{ i | prepend: '/' | prepend: site.baseurl }}">
+
+    {% for link in site.data.nav-links %}
+    {% if link.title == i %}
+    {% assign link = link.url %}
+    {% endif %}
+    {% endfor %}
+
+    <a href="{{ link | prepend: site.baseurl }}">
       <li class="one-third col{% if oddTest == 1 and forloop.last == true %} final-col{% endif %}">
           <div class="tn-container">
             <img src="{{ i | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ i | append: ' featured image' }}" />
@@ -16,6 +23,7 @@
           </div>
       </li>
     </a>
+
     {% endfor %}
   </ul>
 </section><!-- End related sections -->

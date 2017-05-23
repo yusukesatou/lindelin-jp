@@ -38,7 +38,7 @@ permalink: /careers/
     {% if vacancy.closing-date %}
     <br>
     <h3>締め切り</h3>
-    <span class="closing-date">{{ vacancy.closing-date | date: "%b %-d, %Y" }}</span>
+    <span class="closing-date">{{ vacancy.closing-date | date: "%Y年%m月%d日" }}</span>
     {% endif %}
 
     <a href="mailto:{{ site.email | append: '' }}" class="button">エントリー</a>

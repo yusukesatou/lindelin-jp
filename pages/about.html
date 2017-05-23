@@ -19,7 +19,7 @@ search: false
 <!-- Team members -->
 {% if site.data.team-members.size > 0 %}
 <section class="team-members">
-  <h2 class="page-heading">私たち</h2>
+  <h2 align="center">私たち</h2>
   <div class="grid-container">
     {% for member in site.data.team-members %}
     {% comment %}Check whether total no. of staff members is odd / even and structure final member accordingly{% endcomment %}
@@ -59,7 +59,7 @@ search: false
 {% if site.data.locations.size > 0 %}
 <!-- Office locations map -->
 <section class="office-locations">
-  <h2 align="center" class="page-heading">私たちの場所</h2>
+  <h2 align="center">私たちの場所</h2>
   <div class="map-container">
     <div>
       <div class="row">
@@ -75,7 +75,7 @@ search: false
 {% if site.email %}
 <!-- Contact form -->
 <section id="contact">
-    <h2 class="page-heading">お問い合わせ</h2>
+    <h2 align="center">お問い合わせ</h2>
     <form action="https://formspree.io/{{ site.email }}" method="POST" class="formspree" name="contact">
       <input type="text" placeholder="お名前" class="name" name="name" rows="1" required />
 
