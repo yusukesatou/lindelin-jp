@@ -87,6 +87,7 @@ prose:
     - /_sass
     - /css
     - /_site
+    - /js
     - Gemfile
     - Gemfile.lock
     - feed.xml
@@ -95,21 +96,75 @@ prose:
     - CNAME
     - _config.yml
     - index.html
+    - .travis.yml
+    - 404.html
+    - travis.sh
+    - Rakefile
   metadata:
     _posts:
       - name: "layout"
         field:
-          element: "hidden"
-          value: "post"
+          element: "select"
+          label: "レイアウト"
+          placeholder: "レイアウトを選択"
+          options:
+            - name: "記事（画像なし）"
+              value: "post"
+            - name: "記事（画像あり）"
+              value: "image-post"
       - name: "title"
         field:
           element: "text"
-          label: "Title"
-          placeholder: "Add your post title here"
+          label: "タイトル"
+          placeholder: "タイトル"
       - name: "published"
         field:
           element: "checkbox"
           label: "Published"
+          value: false
+      - name: "author"
+        field:
+          element: "select"
+          label: "投稿者"
+          placeholder: "投稿者を選択"
+          options:
+            - name: "Lindelëa"
+              value: "Lindelëa"
+      - name: "date"
+        field:
+          element: "text"
+          label: "投稿日"
+          placeholder: "YYYY-MM-DD"
+      - name: "categories"
+        field:
+          element: "select"
+          label: "カテゴリー"
+          placeholder: "カテゴリーを選択"
+          options:
+            - name: "ニュース"
+              value: "ニュース"
+            - name: "記事"
+              value: "記事"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "タグ"
+          placeholder: "タグを追加"
+          options:
+            - name: "Laravel"
+              value: "Laravel"
+            - name: "PHP"
+              value: "PHP"
+            - name: "Testing"
+              value: "Testing"
+            - name: "ツール"
+              value: "ツール"
+            - name: "JavaScript"
+              value: "JavaScript"
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "コメント許可"
           value: false
     _services:
       - name: "layout"
