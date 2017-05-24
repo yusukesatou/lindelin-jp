@@ -1,13 +1,13 @@
 ---
 layout: event
-start-date: 2016-08-17
-end-date: 2016-09-15 # optional
+start-date: 2016-08-17 12:00
+end-date: 2016-09-15 12:00 # optional
 locations:
-  - name: フォーミックス本社
+  - name: 株式会社フォーミックス
     address: 〒105-0014 東京都港区芝２丁目９−５ ワースリビングＦＫＯ 4F
     latitude: 35.652060
     longitude: 139.751744
-title: Laravel 勉強会（株式会社フォーミックス社内教育）
+title: Laravel 勉強会
 description: "株式会社フォーミックス社内向けのLaravelセミナーです。"
 ---
 ### 1回目：Hello World

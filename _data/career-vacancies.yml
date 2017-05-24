@@ -1,14 +1,15 @@
-- title: Director
+- title: 理事
   description:
-      Lindelin, who has always tried something new, needs a director with energy to create new things. Especially, I would like to expect development in a new area set outside the browser. We are looking for a courageous person who will lead the mixed team with leadership.
-  salary: $0 (We are Volunteer) # optional
+      いつも何か新しいことをチャレンジしているLindelinは、新しいものを創造するためにエネルギーのあるディレクター（理事）を必要としています。
+      特に、新しいエリアでの開発を期待したい。 私たちはリーダーシップを持つ混合チームを率いる勇敢な人物を探しています。
+  salary: $0 (私たちはボランティアです) # optional
   essential-criteria: # optional
-    - Can speak Chinese or Japanese.
-    - Tell us how you can play an active role with your ability at Lindelin.
+    - 日本語または、中国語ができる方
+    - あなたの能力をどうやってLindelinに貢献できるか言える方
   desirable-criteria: # optional
-    - Has intellectual curiosity to learn new areas and their specialty fields with pride.
-    - People who have the courage and leadership to proactively promote projects that no one has done.
-    - Volunteer spirit.
+    - 知的好奇心旺盛で、誰にも負けない得意分野と新しい領域を学習し続けている方
+    - 誰もやっていないプロジェクトを積極的に推進する勇気とリーダーシップを持つ方
+    - ボランティア精神
   closing-date: 2017-10-31
 
 #- title: Another Vacancy Title

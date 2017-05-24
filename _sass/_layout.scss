@@ -121,6 +121,9 @@ nav.menu {
 
   a.nav-title, a.nav-link {
     text-decoration: none;
+    h1 {
+      margin-bottom: $spacing-unit;
+    }
     @include media-query($on-mobile) {
       h1 { font-size: 5rem; }
     }
@@ -130,7 +133,7 @@ nav.menu {
     display: inline-block;
     clear: none;
     position: relative;
-    padding-bottom: 1rem;
+    /*padding-bottom: 1rem;*/
     display: inline-block;
     color: $white-color;
     font-size: 3rem;
@@ -169,7 +172,7 @@ nav.menu {
 
   div.nav-border {
     display: block;
-    margin: 3rem auto auto;
+    margin: 0 auto auto;
     width: 12.5%;
     border-bottom: .1rem solid $white-color;
     @include media-query($on-tablet) { width: 25%; }

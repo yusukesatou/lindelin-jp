@@ -1,6 +1,6 @@
-- title: 概要
+- title: 団体概要
   url: /about/
-- title: 最新情報
+- title: ニュース
   url: /blog/categories/news/
 - title: プロジェクト
   url: /projects/
@@ -14,4 +14,3 @@
   url: /careers/
 - title: ダウンロード
   url: /resources/
-

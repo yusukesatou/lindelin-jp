@@ -1,5 +1,5 @@
 {% if service.icon %}
 <img src="{{ service.icon | prepend: '/images/services' | prepend: site.baseurl }}" width="100%" alt="{{ service.title | append: ' featured image' }}" />
 {% else %}
-<img src="{{ 'services' | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" width="100%" alt="{{ service.title | append: ' featured image' }}" />
+<img src="{{ 'サービス' | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" width="100%" alt="{{ service.title | append: ' featured image' }}" />
 {% endif %}

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: ホーム
 published: true
 ---
 
@@ -25,9 +25,9 @@ published: true
           <a class="nav-link" href="http://jp.lindelin.org">日本語</a>-->
 
           <div class="nav-border"></div>
-          <!--<a class="nav-link" href="http://cn.lindelin.org">中文</a>
+          <a class="nav-link" href="http://jp.lindelin.org">日本語</a>
           <a class="nav-link"> | </a>
-          <a class="nav-link" href="http://jp.lindelin.org">日本語</a>-->
+          <a class="nav-link" href="http://www.lindelin.org">English</a>
         </nav>
 
       </div>
@@ -37,8 +37,8 @@ published: true
   <!-- Homepage news selection -->
   <section id="homepage-news">
     <div align="center">
-      <a href="{{ '/blog/index.html' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'Latest News from ' }}">
-        <h2 class="home-header">Latest News</h2>
+      <a href="{{ '/blog/index.html' | prepend: site.baseurl }}" title="{{ site.title | prepend: '最新ニュース　' }}">
+        <h2 class="home-header">最新ニュース</h2>
       </a>
     </div>
     <ul class="post-list">
@@ -47,14 +47,14 @@ published: true
       {% endfor %}
     </ul>
 
-    <a href="{{ '/blog/index.html' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'Latest News from ' }}" class="button">See All News</a>
+    <a href="{{ '/blog/index.html' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'すべてのニュース表示' }}" class="button">すべてのニュース表示</a>
   </section><!-- End homepage news selection -->
 
   <!-- Homepage services selection -->
   <section id="services-container" class="homepage-services">
     <div align="center">
-      <a href="{{ '/services' | prepend: site.baseurl }}" title="{{ site.title | append: ' Services' }}">
-        <h2 class="home-header">Services</h2>
+      <a href="{{ '/services' | prepend: site.baseurl }}" title="{{ site.title | append: ' サービス' }}">
+        <h2 class="home-header">サービス</h2>
       </a>
     </div>
     <ul class="grid-container">
@@ -89,15 +89,15 @@ published: true
       </a>
       {% endfor %}
 
-      <a href="{{ '/services' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'See All ' | append: ' Services' }}" class="button home-button">See All Services</a>
+      <a href="{{ '/services' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'すべてのサービス表示' }}" class="button home-button">すべてのサービス表示</a>
     </ul>
   </section><!-- End homepage services selection -->
 
   <!-- Homepage events selection -->
   <section id="homepage-events">
     <div align="center">
-      <a href="{{ '/events' | prepend: site.baseurl }}" title="{{ site.title | append: ' Events' }}">
-        <h2 class="home-header">Events</h2>
+      <a href="{{ '/events' | prepend: site.baseurl }}" title="{{ site.title | append: ' イベント' }}">
+        <h2 class="home-header">イベント</h2>
       </a>
     </div>
     <ul class="events-index">
@@ -106,14 +106,14 @@ published: true
       {% endfor %}
     </ul>
 
-    <a href="{{ '/events' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'See All ' | append: ' Events' }}" class="button">See All Events</a>
+    <a href="{{ '/events' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'すべてのイベント表示' }}" class="button">すべてのイベント表示</a>
   </section><!-- End homepage events selection -->
 
   <!-- Homepage projects selection -->
   <section id="services-container" class="homepage-projects">
     <div align="center">
-      <a href="{{ '/projects' | prepend: site.baseurl }}" title="{{ site.title | append: ' Projects' }}">
-        <h2 class="home-header">Projects</h2>
+      <a href="{{ '/projects' | prepend: site.baseurl }}" title="{{ site.title | append: ' プロジェクト' }}">
+        <h2 class="home-header">プロジェクト</h2>
       </a>
     </div>
     <ul class="grid-container">
@@ -141,7 +141,7 @@ published: true
         </a>
         {% endunless %}
       {% endfor %}
-      <a href="{{ '/projects' | prepend: site.baseurl }}" title="See All Projects" class="button home-button">See All Projects</a>
+      <a href="{{ '/projects' | prepend: site.baseurl }}" title="すべてのプロジェクト表示" class="button home-button">すべてのプロジェクト表示</a>
     </ul>
   </section><!-- End homepage projects selection -->
 </div>

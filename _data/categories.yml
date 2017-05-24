@@ -1,7 +1,7 @@
-- title: News
+- title: ニュース
   url: news
-  description: "Lindelin News is the official blog of Lindelin. Every day bringing you the latest news and events."
-- title: Articles
+  description: "Lindelin NewsはLindelinの公式ブログです。 毎日最新のニュースやイベントをお届けします。"
+- title: 記事
   icon: /articles-icon.jpg
   feature: /articles.jpg
   url: articles

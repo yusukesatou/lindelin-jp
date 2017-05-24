@@ -8,9 +8,9 @@
     <span class="post-meta">&nbsp;|&nbsp;</span>
     <span class="post-meta">読む所要時間：{{ post.content.size | divided_by: 400 | floor | append: ' 分' }}</span>
 
-    <h2>
+    <h3>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
+    </h3>
 
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
         <p>{{ post.excerpt | truncatewords: 30 }}</p>
