@@ -112,6 +112,16 @@ prose:
               value: "post"
             - name: "記事（画像あり）"
               value: "image-post"
+      - name: "feature"
+        field:
+          element: "text"
+          label: "ビジュアル"
+          placeholder: "ビジュアルを追加"
+      - name: "icon"
+        field:
+          element: "text"
+          label: "アイコン"
+          placeholder: "アイコンを追加"
       - name: "title"
         field:
           element: "text"
