@@ -4,8 +4,9 @@ title: 開発セミナー
 icon: /development-seminar/icon.jpg
 feature: /development-seminar/feature.jpg
 related: 
-    - IT consulting
-    - Open source software development
-description: "The development seminar is intended for developers who want to upgrade their skills to provide a platform for technical exchange."
+    - ITコンサルティング
+    - オープンソース活動
+description: "スキルアップしたい開発者のため、セミナーや技術交流のプラットフォームを提供します。"
 ---
-The development seminar is intended for developers who want to upgrade their skills to provide a platform for technical exchange.
+開発を愛する人たちを集めて、
+開発の楽しさを再発見することを目指した勉強会やイベントを開催しています。

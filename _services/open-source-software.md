@@ -4,8 +4,16 @@ title: オープンソース活動
 icon: /open-source-software-service/icon.jpg
 feature: /open-source-software-service/feature.jpg
 related: 
-- IT consulting
-- Development Seminar
-description: "We are engaged in a variety of open source activities."
+- ITコンサルティング
+- 開発セミナー
+description: "Lindeinは、さまざまなオープンソース活動に取り組んでいます"
 ---
-We truly ♥ free, libre, open source software and the power of the Community, so these set of tools are and always will be free, open source software. Feel free to contribute!
+### オープンソースとは？
+人間が理解しやすいプログラミング言語で書かれたコンピュータプログラムであるソースコードを広く一般に公開し、
+誰でも自由に扱ってよいとする考え方。
+また、そのような考えに基づいて公開されたソフトウェアのこと。
+
+### オープンソース活動
+Lindelinは、オープンソースソフトウェアに関する情報の収集・提供、利用、技術者の育成、オープンソースコミュニティの支援及び開発等に関する活動を行い、
+「オープンソースソフトウェアをシステム構築に利用」するための知識、技術などを蓄積し、
+オープンソースソフトウェアの活用の促進に寄与することを目的とする。

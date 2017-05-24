@@ -2,25 +2,30 @@
 layout: service
 title: ITコンサルティング
 related: 
-- Open source software development
-- Development Seminar
-description: "Management support for small and medium enterprises IT consulting service."
+- オープンソース活動
+- 開発セミナー
+description: "中小企業の経営支援ITコンサルティングサービス"
 ---
-### What is IT consulting?
-It is a business launched to provide media sketch's advanced IT technology to small and medium enterprises. For the purpose of contributing to society, it offers almost free of charge to small and medium-sized enterprises that are said to have little profit.
+### ITコンサルティングとは？
+それは中小企業にLindelinの高度なIT技術を提供するために立ち上げられたサービスです。 
+社会に貢献することを目的として、ほとんど利益を得ていない中小企業にはほぼ無料で提供します。
 
 
-#### Internet advertising strategy
-Lindelin will propose a comprehensive Internet advertising strategy that utilizes homepages, social media and video sharing sites, and so on.
+#### インターネット広告戦略提案
+Lindelinは、ホームページ、ソーシャルメディアとビデオ共有サイトなどを活用した総合的なインターネット広告戦略を提案します。
 
 
-#### IT cost optimization
-Do you understand the relevance of the amount paid to IT companies? As a member of your company, Lindein will check the cost involved in IT, negotiate with the business operator, and realize the extra cost reduction.
+#### ITコストの最適化
+あなたはIT企業に支払われる金額の妥当性を理解していますか？ 
+Lindelinは、あなたの会社のメンバーとして、ITに関わるコストをチェックし、事業者と交渉し、追加のコスト削減を実現します。
 
 
-#### Project management
-Have you clearly left your system development to IT providers? As a member of your company, Lindelin will help you build a system that you can truly use by conducting project management based on management strategies.
+#### プロジェクト管理提案
+Lindelinは、経営戦略に基づいたプロジェクト管理を実践して、本当に使えるシステムを構築するのを手伝います。
 
 
-#### System management service
-Are there troubles about system operation? Is the Internet slow, there is no concern about mail security? Lindelin will manage all your systems for companies that can not have professional units.
+#### システム管理提案
+システムの運用に問題がありますか？ 
+インターネットは遅いですか、
+メールのセキュリティについて心配はありませんか？ 
+Lindelinは、プロフェッショナルユニットを所有できない企業向けのすべてのシステムを管理します。

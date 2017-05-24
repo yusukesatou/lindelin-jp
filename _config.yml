@@ -78,7 +78,7 @@ collections:
 
 # Prose
 prose:
-  siteurl: 'http://www.lindelin.org'
+  siteurl: 'http://jp.lindelin.org'
   media: 'images'
   ignore:
     - /.sass-cache
