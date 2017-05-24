@@ -15,4 +15,4 @@ author: Lindelëa
 ##### Lindelin公式サイト:
 - Lindelin:　[http://www.lindelin.org](http://www.lindelin.org)
 - Lindelin Japan:　[http://jp.lindelin.org](http://jp.lindelin.org)
-- Lindelin China:　[http://cn.lindelin.org](http://cn.lindelin.org)
+- Lindelin China:　近日公開
