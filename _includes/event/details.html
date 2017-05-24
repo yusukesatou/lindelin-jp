@@ -3,7 +3,7 @@
 
         {% include event/social-shares.html %}
 
-        <span class="event-meta">{{ event.start-date | date: '%Y年%m月%d日　%H時%M分' }}</span>
+        <span class="event-meta">{{ event.start-date | date: '%Y年%m月%d日 %H時%M分' }}</span>
         <a href="{{ event.url | prepend: site.baseurl }}">
             <h4>{{ event.title }}</h4>
         </a>

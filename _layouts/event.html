@@ -21,11 +21,11 @@ layout: default
         {% include icons/clock.html %}
       </span>
       <span class="event-meta">
-        {{ page.start-date | date: '%R, %b %-d, %Y' }}
+        {{ page.start-date | date: '%Y年%m月%d日 %H時%M分' }}
       </span>
       {% if page.end-date %}
       <span class="event-meta">
-        {{ page.end-date | date: '%R, %b %-d, %Y' | prepend: ' - ' }}
+        {{ page.end-date | date: '%Y年%m月%d日 %H時%M分' | prepend: ' - ' }}
       </span>
       {% endif %}
     </div>
