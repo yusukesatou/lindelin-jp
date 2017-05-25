@@ -123,59 +123,10 @@ prose:
           element: "text"
           label: "アイコン"
           placeholder: "アイコンを追加"
-      - name: "title"
-        field:
-          element: "textarea"
-          label: "タイトル"
-          placeholder: "タイトル"
       - name: "published"
         field:
           element: "checkbox"
           label: "公開する"
-          value: false
-      - name: "author"
-        field:
-          element: "select"
-          label: "投稿者"
-          placeholder: "投稿者を選択"
-          options:
-            - name: "Lindelëa"
-              value: "Lindelëa"
-      - name: "date"
-        field:
-          element: "text"
-          label: "投稿日"
-          placeholder: "YYYY-MM-DD"
-      - name: "categories"
-        field:
-          element: "select"
-          label: "カテゴリー"
-          placeholder: "カテゴリーを選択"
-          options:
-            - name: "ニュース"
-              value: "ニュース"
-            - name: "記事"
-              value: "記事"
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "タグ"
-          placeholder: "タグを追加"
-          options:
-            - name: "Laravel"
-              value: "Laravel"
-            - name: "PHP"
-              value: "PHP"
-            - name: "Testing"
-              value: "Testing"
-            - name: "ツール"
-              value: "ツール"
-            - name: "JavaScript"
-              value: "JavaScript"
-      - name: "comments"
-        field:
-          element: "checkbox"
-          label: "コメント許可"
           value: false
       - name: "author"
         field:
