@@ -130,7 +130,7 @@ prose:
       - name: "published"
         field:
           element: "checkbox"
-          label: "Published"
+          label: "公開する"
           value: false
       - name: "author"
         field:
@@ -179,70 +179,122 @@ prose:
     _services:
       - name: "layout"
         field:
-          element: "hidden"
-          value: "service"
+          element: "select"
+          label: "レイアウト"
+          placeholder: "レイアウトを選択"
+          options:
+            - name: "デフォルト"
+              value: "service"
+      - name: "feature"
+        field:
+          element: "text"
+          label: "ビジュアル"
+          placeholder: "ビジュアルを追加"
+      - name: "icon"
+        field:
+          element: "text"
+          label: "アイコン"
+          placeholder: "アイコンを追加"
       - name: "title"
         field:
           element: "text"
-          label: "Title"
-          placeholder: "Add your service title here"
+          label: "タイトル"
+          placeholder: "タイトル"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "公開する"
+          value: false
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "コメント許可"
+          value: false
       - name: "description"
         field:
           element: "textarea"
-          label: "Description"
-          placeholder: "Add a short description of your service here"
+          label: "説明"
+          placeholder: "説明文を追加する"
       - name: "related"
         field:
           element: "textarea"
-          label: "Related"
-          placeholder: "Add the titles of related services here"
+          label: "関連記事"
+          placeholder: "関連記事を追加する"
     _projects:
       - name: "layout"
         field:
-          element: "hidden"
-          value: "project"
+          element: "select"
+          label: "レイアウト"
+          placeholder: "レイアウトを選択"
+          options:
+            - name: "デフォルト"
+              value: "project"
+      - name: "feature"
+        field:
+          element: "text"
+          label: "ビジュアル"
+          placeholder: "ビジュアルを追加"
+      - name: "icon"
+        field:
+          element: "text"
+          label: "アイコン"
+          placeholder: "アイコンを追加"
       - name: "title"
         field:
-          element: "textarea"
-          placeholder: "Add a title for the issue you address here"
+          element: "text"
+          label: "タイトル"
+          placeholder: "タイトル"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "公開する"
+          value: false
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "コメント許可"
+          value: false
       - name: "description"
         field:
           element: "textarea"
-          placeholder: "Add a short description of how you address the issue here"
+          label: "説明"
+          placeholder: "説明文を追加する"
       - name: "related"
         field:
           element: "textarea"
-          placeholder: "Add the titles of related issues here"
+          label: "関連記事"
+          placeholder: "関連記事を追加する"
     _events:
       - name: "layout"
         field:
-          element: "hidden"
-          value: "event"
+          element: "select"
+          label: "レイアウト"
+          placeholder: "レイアウトを選択"
+          options:
+            - name: "デフォルト"
+              value: "event"
       - name: "title"
         field:
-          element: "textarea"
-          placeholder: "Add a title for your event here"
+          element: "text"
+          label: "タイトル"
+          placeholder: "タイトル"
       - name: "description"
         field:
           element: "textarea"
-          placeholder: "Add a short description of your event here"
+          label: "説明"
+          placeholder: "説明文を追加する"
       - name: "start-date"
         field:
           element: "textarea"
-          placeholder: "Add the event date / time in the format YYYY-MM-DD HH:MM"
+          label: "開始日時"
+          placeholder: "YYYY-MM-DD HH:MM"
       - name: "end-date"
         field:
           element: "textarea"
-          placeholder: "You can optionally define an end date / time  for your event in the format YYYY-MM-DD HH:MM"
-      - name: "name"
+          label: "終了日時"
+          placeholder: "YYYY-MM-DD HH:MM"
+      - name: "locations"
         field:
           element: "textarea"
-          placeholder: "Street address, for display purposes only"
-      - name: "latitude"
-        field:
-          element: "textarea"
-          placeholder: "The latitude (usually first) value of the location"
-      - name: "longitude"
-        field:
-          element: "textarea"
-          placeholder: "The longitude (usually second) value of the location"
+          label: "場所"
+          placeholder: "場所を追加する"
