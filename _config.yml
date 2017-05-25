@@ -125,7 +125,7 @@ prose:
           placeholder: "アイコンを追加"
       - name: "title"
         field:
-          element: "text"
+          element: "textarea"
           label: "タイトル"
           placeholder: "タイトル"
       - name: "published"
@@ -242,7 +242,7 @@ prose:
           placeholder: "アイコンを追加"
       - name: "title"
         field:
-          element: "text"
+          element: "textarea"
           label: "タイトル"
           placeholder: "タイトル"
       - name: "published"
@@ -286,7 +286,7 @@ prose:
           placeholder: "アイコンを追加"
       - name: "title"
         field:
-          element: "text"
+          element: "textarea"
           label: "タイトル"
           placeholder: "タイトル"
       - name: "published"
@@ -320,7 +320,7 @@ prose:
               value: "event"
       - name: "title"
         field:
-          element: "text"
+          element: "textarea"
           label: "タイトル"
           placeholder: "タイトル"
       - name: "description"
