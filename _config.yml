@@ -78,8 +78,12 @@ collections:
 
 # Prose
 prose:
+  branch:
+    - gh-pages
   siteurl: 'http://jp.lindelin.org'
   media: 'images'
+  ignore_branch:
+    - master
   ignore:
     - /.sass-cache
     - /_layouts
