@@ -191,11 +191,6 @@ prose:
           element: "text"
           label: "アイコン"
           placeholder: "アイコンを追加"
-      - name: "title"
-        field:
-          element: "textarea"
-          label: "タイトル"
-          placeholder: "タイトル"
       - name: "published"
         field:
           element: "checkbox"
@@ -235,11 +230,6 @@ prose:
           element: "text"
           label: "アイコン"
           placeholder: "アイコンを追加"
-      - name: "title"
-        field:
-          element: "textarea"
-          label: "タイトル"
-          placeholder: "タイトル"
       - name: "published"
         field:
           element: "checkbox"
@@ -269,11 +259,6 @@ prose:
           options:
             - name: "デフォルト"
               value: "event"
-      - name: "title"
-        field:
-          element: "textarea"
-          label: "タイトル"
-          placeholder: "タイトル"
       - name: "description"
         field:
           element: "textarea"
