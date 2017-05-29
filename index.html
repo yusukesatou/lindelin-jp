@@ -1,147 +1,40 @@
 ---
-layout: default
+layout: top
 title: ホーム
 published: true
 ---
+  <style type="text/css">
+  body {
+    /* 画像ファイルの指定 */
+    background-image: url("{{ '角砂糖集合' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}");
 
-<div class="home">
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: center center;
+     
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+     
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+     
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+     
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    background-color: #FFF;
 
-  <!-- Homepage feature -->
-  <section class="home-feature">
-    <header class="page-header no-margin">
-      <div class="mask"></div>
-      <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="page-hero" />
-      <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="mobile-hero" />
-      <div class="text-box">
-        <p>{{ site.description }}</p>
+  }
 
-        <nav class="menu">
-          <a href="{{ '/' | prepend: site.baseurl }}" class="nav-title {% if site.title.size > 9 %}long-title{% endif %}"><h1>{{ site.title }}</h1></a>
-          {% for link in site.data.nav-links %}
-            <a class="nav-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
-          {% endfor %}
+  </style>
+        <div class="toptext-box">
+          <p>{{ site.description }}</p>
 
-          <!--<a class="nav-link" href="http://cn.lindelin.org">中文</a>
-          <a class="nav-link" href="http://jp.lindelin.org">日本語</a>-->
+          <nav class="menu">
+            <a href="{{ '/' | prepend: site.baseurl }}" class="nav-title {% if site.title.size > 9 %}long-title{% endif %}"><h1>{{ site.title }}</h1></a>
+            {% for link in site.data.nav-links %}
+              <a class="nav-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+            {% endfor %}
 
-          <div class="nav-border"></div>
-          <a class="nav-link" href="http://cn.lindelin.org">中文</a>
-          <a class="nav-link"> | </a>
-          <a class="nav-link" href="http://www.lindelin.org">English</a>
-        </nav>
+          </nav>
 
-      </div>
-    </header>
-  </section><!-- End homepage feature -->
-
-  <!-- Homepage news selection -->
-  <section id="homepage-news">
-    <div align="center">
-      <a href="{{ '/blog/index.html' | prepend: site.baseurl }}" title="{{ site.title | prepend: '最新ニュース　' }}">
-        <h2 class="home-header">最新ニュース</h2>
-      </a>
-    </div>
-    <ul class="post-list">
-      {% for post in site.posts limit:3 %}
-      {% include post-details.html %}
-      {% endfor %}
-    </ul>
-
-    <a href="{{ '/blog/index.html' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'すべてのニュース表示' }}" class="button">すべてのニュース表示</a>
-  </section><!-- End homepage news selection -->
-
-  <!-- Homepage services selection -->
-  <section id="services-container" class="homepage-services">
-    <div align="center">
-      <a href="{{ '/services' | prepend: site.baseurl }}" title="{{ site.title | append: ' サービス' }}">
-        <h2 class="home-header">サービス</h2>
-      </a>
-    </div>
-    <ul class="grid-container">
-      {% for service in site.services limit:3 %}
-      <a href="{{ service.url | prepend: site.baseurl }}">
-        {% if forloop.length == 2 %}
-        <li class="one-half col">
-        {% elsif forloop.length < 2 %}
-        <li class="one-whole col">
-        {% else %}
-        <li class="one-third col{% if forloop.last == true %} final-col{% endif %}">
-        {% endif %}
-          <div class="tn-container">
-
-            {% include service/icon.html %}
-
-            <div class="mask"></div>
-            <div class="text-box">
-              {% if service.title.size < 10 %}
-              <h1>{{ service.title }}</h1>
-              {% elsif service.title.size >= 10 and service.title.size < 20 %}
-              <h2>{{ service.title }}</h2>
-              {% elsif service.title.size >= 20 and service.title.size < 33 %}
-              <h3>{{ service.title }}</h3>
-              {% else %}
-              <h5>{{ service.title }}</h5>
-              {% endif %}
-              {% if service.description %}<p class="icon-description">{{ service.description }}</p>{% endif %}
-            </div>
-          </div>
-        </li>
-      </a>
-      {% endfor %}
-
-      <a href="{{ '/services' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'すべてのサービス表示' }}" class="button home-button">すべてのサービス表示</a>
-    </ul>
-  </section><!-- End homepage services selection -->
-
-  <!-- Homepage events selection -->
-  <section id="homepage-events">
-    <div align="center">
-      <a href="{{ '/events' | prepend: site.baseurl }}" title="{{ site.title | append: ' イベント' }}">
-        <h2 class="home-header">イベント</h2>
-      </a>
-    </div>
-    <ul class="events-index">
-      {% for event in site.events limit:3 %}
-        {% include event/details.html %}
-      {% endfor %}
-    </ul>
-
-    <a href="{{ '/events' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'すべてのイベント表示' }}" class="button">すべてのイベント表示</a>
-  </section><!-- End homepage events selection -->
-
-  <!-- Homepage projects selection -->
-  <section id="services-container" class="homepage-projects">
-    <div align="center">
-      <a href="{{ '/projects' | prepend: site.baseurl }}" title="{{ site.title | append: ' プロジェクト' }}">
-        <h2 class="home-header">プロジェクト</h2>
-      </a>
-    </div>
-    <ul class="grid-container">
-      {% for project in site.projects limit:3 %}
-        {% unless project.title == page.title %}
-        <a href="{{ project.url | prepend: site.baseurl }}">
-          {% if forloop.length == 2 %}
-          <li class="one-half col">
-          {% elsif forloop.length < 2 %}
-          <li class="one-whole col">
-          {% else %}
-          <li class="one-third col{% if forloop.last == true %} final-col{% endif %}">
-            {% endif %}
-            <div class="tn-container">
-
-              {% include project/icon.html %}
-
-              <div class="mask"></div>
-              <div class="text-box">
-                <h1>{{ project.title }}</h1>
-                {% if project.description %}<p class="icon-description">{{ project.description }}</p>{% endif %}
-            </div>
-          </div>
-        </li>
-        </a>
-        {% endunless %}
-      {% endfor %}
-      <a href="{{ '/projects' | prepend: site.baseurl }}" title="すべてのプロジェクト表示" class="button home-button">すべてのプロジェクト表示</a>
-    </ul>
-  </section><!-- End homepage projects selection -->
-</div>
+  </div>

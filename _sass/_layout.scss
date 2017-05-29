@@ -377,6 +377,46 @@ div.text-box {
   }
 }
 
+div.toptext-box {
+  position: static;
+  height: 1000px;
+  color: $white-color;
+  text-align: center;
+  text-shadow: 5px 5px 1px #999999;
+  h1, h2, h3, h5, p {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  @include media-query($content-width) {
+    bottom: 5%;
+    h1 { font-size: 5.0rem; }
+    nav.menu h1, h1.page-title { font-size: 12rem; }
+    h2 { font-size: 4.0rem; }
+    h3 { font-size: 3.2rem; }
+    p.icon-description { font-size: 1.6rem; }
+  }
+  @include media-query($on-ipad) {
+    bottom: 5%;
+    h1 { font-size: 4.0rem; }
+    nav.menu h1, h1.page-title { font-size: 8rem; }
+    h2 { font-size: 3.2rem; }
+    h3 { font-size: 2.4rem; }
+    p.icon-description { font-size: 1.2rem; }
+  }
+  @include media-query($on-tablet) {
+    nav.menu h1, h1.page-title { font-size: 6.0rem; }
+    bottom: 5%;
+  }
+  @include media-query($on-mobile) {
+    bottom: 5%;
+    h1 { font-size: 5.0rem; }
+    nav.menu h1, h1.page-title { font-size: 5.0rem; }
+    h2 { font-size: 4.0rem; }
+    h3 { font-size: 3.2rem; }
+    p.icon-description { font-size: 1.6rem; }
+  }
+}
+
 /**
  * Collection page
  */

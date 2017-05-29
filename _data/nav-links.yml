@@ -1,16 +1,12 @@
-- title: 団体概要
+- title: あばうとみー
   url: /about/
-- title: ニュース
-  url: /blog/categories/news/
-- title: プロジェクト
+- title: ぷろじぇくと
   url: /projects/
-- title: サービス
+- title: さーびすー
   url: /services/
-- title: ブログ
+- title: ひび
   url: /blog/
-- title: イベント
+- title: いべんと
   url: /events/
-- title: 採用情報
-  url: /careers/
-- title: ダウンロード
+- title: だうんろーど
   url: /resources/
