@@ -4,7 +4,7 @@ title: あばうとみー
 description: >-
   さとうは北海道出身のプログラマーです。
 introduction: >-
-  言ってしまえば道産子です。
+  道産子です。
 permalink: /about/
 published: true
 search: false
@@ -16,49 +16,22 @@ search: false
 </div>
 <!-- End about page introduction -->
 <!-- Team members -->
-{% if site.data.team-members.size > 0 %}
-<section class="team-members">
-  <h2 align="center">私たち</h2>
-  <div class="grid-container">
-    {% for member in site.data.team-members %}
-    {% comment %}Check whether total no. of staff members is odd / even and structure final member accordingly{% endcomment %}
-    {% assign columnMod = forloop.length | modulo:2 %}
-    {% if columnMod == 0 %}
-      {% cycle '<div class="row">', '' %}
-      <!-- Team member card -->
-      {% include staff-card.html columnClass='one-half col' %}<!-- End team member card -->
 
-      {% cycle '', '</div>' %}
-    {% else %}
-      {% unless forloop.last == true %}
-        {% cycle '<div class="row">', '' %}
-        <!-- Team member card -->
-        {% include staff-card.html columnClass='one-half col' %}<!-- End team member card -->
-
-        {% cycle '', '</div>' %}
-      {% else %}
-      <!-- Team member card -->
-        {% include staff-card.html columnClass='one-half col final-col' %}<!-- End team member card -->
-      {% endunless %}
-    {% endif %}
-  {% endfor %}
-  </div>
-</section>
-{% endif %}<!-- End team members -->
+<!-- End team members -->
 
 <!-- Careers link -->
-{% if site.data.career-vacancies.size > 0 %}
+<!-- {% if site.data.career-vacancies.size > 0 %}
 <a href="{{ '/careers' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'Careers at '}}" class="careers-link">
   <h2 align="center">メンバー募集中です！</h2>
   <span>全職種とも学歴・年齢は不問です。</span>
   <p>{{ site.title }}の募集要項を見る</p>
 </a><!-- End careers link -->
-{% endif %}
+<!-- {% endif %} -->
 
 {% if site.data.locations.size > 0 %}
 <!-- Office locations map -->
 <section class="office-locations">
-  <h2 align="center">私たちの場所</h2>
+  <h2 align="center">私の場所</h2>
   <div class="map-container">
     <div>
       <div class="row">

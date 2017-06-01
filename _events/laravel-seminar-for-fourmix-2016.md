@@ -1,5 +1,6 @@
 ---
 layout: event
+published: false
 start-date: 2016-08-17 12:00
 end-date: 2016-09-15 12:00 # optional
 locations:

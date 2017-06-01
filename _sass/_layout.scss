@@ -383,6 +383,8 @@ div.toptext-box {
   color: $white-color;
   text-align: center;
   text-shadow: 5px 5px 1px #999999;
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
   h1, h2, h3, h5, p {
     padding-left: 4%;
     padding-right: 4%;
@@ -503,7 +505,8 @@ section#services-container, section#related-sections {
       position: relative;
       margin: 2%;
       overflow: hidden;
-
+      width: 300px;
+      height: 200px;
       h2, p {
         opacity: 0.8;
         @extend %ease-in;
